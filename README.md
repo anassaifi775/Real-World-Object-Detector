@@ -50,8 +50,7 @@ pip install opencv-python ultralytics numpy
 
 ### 2️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/anassaifi775/Real-World-Object-Detector
 ```
 
 ### 3️⃣ Run the Script
@@ -94,7 +93,7 @@ Make sure:
 
 ## 👨‍💻 Author
 **Mohd Anas**  
-Aspiring Data Analyst | Computer Vision & AI Enthusiast
+Aspiring Data Scientist | Computer Vision & AI Enthusiast
 
 ---
 
