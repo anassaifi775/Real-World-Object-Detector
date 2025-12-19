@@ -1,86 +1,120 @@
-📌 Real-Time Object & Face Detection using OpenCV and YOLO
-🔍 Project Overview
+# 📌 Real-Time Object & Face Detection using OpenCV and YOLO
 
-This project demonstrates real-time computer vision applications using OpenCV and YOLO (You Only Look Once). It includes implementations for:
+## 🔍 Project Overview
+This project demonstrates real-world computer vision applications using both traditional image processing techniques and deep learning-based object detection. It combines OpenCV Haar Cascade classifiers for face and eye detection with YOLOv8 for general object detection.
 
-Face and eye detection using Haar Cascade classifiers
+The project is designed for learning, experimentation, and portfolio demonstration of computer vision concepts using Python.
 
-Object detection using YOLOv8
+---
 
-Image-based detection for easy experimentation
+## 🛠 Technologies Used
+- Python
+- OpenCV
+- YOLOv8 (Ultralytics)
+- NumPy
 
-Webcam-based real-time detection for local environments
+---
 
-The project is designed to help understand how object detection models work in real-world scenarios using Python.
+## 🚀 Features
+- Face detection using Haar Cascade classifiers
+- Eye detection within detected faces
+- Object detection using YOLOv8 (pretrained on COCO dataset)
+- Bounding boxes and class labels on detected objects
+- Image-based detection
+- Real-time webcam detection (local execution)
+- Clean and modular code structure
 
-🛠 Technologies Used
+---
 
-Python
+## ⚠️ Camera & Environment Limitations
+Real-time webcam detection **works only in local environments**, such as:
+- VS Code
+- PyCharm
+- Local Jupyter Notebook
 
-OpenCV
+Google Colab does **not** support direct webcam access using OpenCV (`cv2.VideoCapture(0)`).
 
-YOLOv8 (Ultralytics)
+In Google Colab:
+- Image-based detection is supported
+- Video file–based detection is supported
+- Webcam-based real-time detection is **not supported**
 
-NumPy
+---
 
-🚀 Features
+## 📂 Project Structure
+```
+├── object_detection.py
+├── haarcascade_frontalface_default.xml
+├── haarcascade_eye.xml
+├── yolov8n.pt
+├── sample_images/
+└── README.md
+```
 
-Detects faces and eyes in static images
+---
 
-Performs real-time object detection using YOLOv8
+## ▶️ How to Run the Project (Local Machine)
 
-Draws bounding boxes and class labels on detected objects
-
-Easy-to-modify code for experimenting with different models
-
-Beginner-friendly and well-structured
-
-⚠️ Important Note on Camera Access
-
-Webcam / camera-based detection works only on local environments such as:
-
-VS Code
-
-PyCharm
-
-Local Jupyter Notebook
-
-Due to hardware access limitations, Google Colab does not support direct webcam access using OpenCV (cv2.VideoCapture(0)).
-For Colab, the project supports image or video-based detection only.
-
-📂 How to Run (Local Machine)
+### 1️⃣ Install Dependencies
+```bash
 pip install opencv-python ultralytics numpy
+```
 
+### 2️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 3️⃣ Run the Script
+```bash
 python object_detection.py
-
+```
 
 Make sure:
+- Your webcam is connected
+- You are running the project locally (not on Google Colab)
 
-Your webcam is connected
+---
 
-You are running the project locally (not on Google Colab)
+## 📌 Use Cases
+- Learning computer vision fundamentals
+- Face and eye detection systems
+- Real-time object detection demos
+- AI / ML portfolio projects
+- Surveillance and monitoring prototypes
+- OpenCV and YOLO practice for beginners
 
-📌 Use Cases
+---
 
-Computer Vision learning projects
+## 🔮 Future Improvements
+- Add FPS (frames per second) counter
+- Support video file input
+- Improve detection accuracy and performance
+- Add face recognition functionality
+- Object tracking across frames
+- Deploy as a web or desktop application
+- Optimize models for edge devices
 
-AI/ML portfolio projects
+---
 
-Real-time object detection demos
+## 📎 Dataset & Models
+- YOLOv8 pretrained on the COCO dataset
+- Haar Cascade XML files provided by OpenCV
 
-Beginner OpenCV practice
+---
 
-📎 Future Improvements
-
-FPS counter for performance analysis
-
-Video file detection support
-
-Model optimization for faster inference
-
-Face recognition integration
-
-👨‍💻 Author
-
-Mohd Anas
+## 👨‍💻 Author
+**Mohd Anas**  
 Aspiring Data Analyst | Computer Vision & AI Enthusiast
+
+---
+
+## ⭐ Acknowledgements
+- OpenCV community
+- Ultralytics YOLO
+- COCO Dataset contributors
+
+---
+
+⭐ If you find this project helpful, feel free to star the repository!
