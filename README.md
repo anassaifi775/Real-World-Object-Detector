@@ -41,18 +41,6 @@ In Google Colab:
 
 ---
 
-## 📂 Project Structure
-```
-├── object_detection.py
-├── haarcascade_frontalface_default.xml
-├── haarcascade_eye.xml
-├── yolov8n.pt
-├── sample_images/
-└── README.md
-```
-
----
-
 ## ▶️ How to Run the Project (Local Machine)
 
 ### 1️⃣ Install Dependencies
